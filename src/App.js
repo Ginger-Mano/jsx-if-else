@@ -1,25 +1,41 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { Component } from "react"
+import Apples from "./Apples"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {
+    question: false
+  }
+
+  renderApple = () => {
+    if (this.state.question === false) {
+      return "hi"
+    } else {
+      return <Apples />
+    }
+  }
+
+
+
+  render() {
+    // const question = this.state.question;
+    // let ask;
+    // if (question) {
+    //   ask = <Apples />
+    // } else {
+    //   ask = "Hi"
+    // }
+
+    const debate = this.state.question ? "Hi" : <Apples />
+    return (
+
+      <div className="App">
+        <h2>Hello</h2>
+        {this.renderApple()}
+        {debate}
+      </div>
+    );
+  }
 }
 
 export default App;
