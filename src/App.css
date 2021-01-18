@@ -1,4 +1,59 @@
 .App {
   text-align: center;
+  font-family: righteous;
+ 
+}
+.img {
+  height: 50%;
+  width: 50%;
+}
+.homeDiv {
+  background-color: wheat;
+   position: absolute;
+   height: 100%;
+  width: 100%;
+  top: 0%
+}
+.introInfo {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 20px;
+}
+.introInfo2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 20px;
+}
+.homeTitle {
+  font-size: 120px;
+  font-family: righteous;
+}
+.subtitle {
+  font-size: 60px;
+  font-family: righteous;
 }
 
+.homeImg {
+
+  border-width: 30px;
+ border-color: black;
+}
+button {
+  padding: 20px;
+  border-width: 20px;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+.introimg {
+  height: 50%;
+  width: 40%;
+}
+
+.introDiv {
+  background-color: cornsilk;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
